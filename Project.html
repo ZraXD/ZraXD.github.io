@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f1f6;
+            color: #333;
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            position: sticky;
+        }
+        header {
+            background: linear-gradient(135deg, #7dda99, #a4ffbb);
+            color: #fff;
+            padding: 2em 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2em auto;
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+        .profile h1 {
+            margin: 0.5em 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        .profile p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        .section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2em;
+            margin-bottom: 2em;
+            transition: box-shadow 0.3s;
+        }
+        .section:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #94e2a8;
+        }
+        .section p {
+            line-height: 1.8;
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            z-index: 1;
+        }
+        footer a {
+            color: #97f8eb;
+            text-decoration: none;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <a href="#" class="logo">Zra</a></div>
+        <h1>Selamat datang di Website Portofolio Saya</h1>
+    </header>
+
+    <div class="container">
+        <section class="profile">
+            <img src="zra.jpg" alt="Foto Profil">
+            <h1>Izra Rakhi Muhammad</h1>
+            <p>Saya seorang pengembang Frontend dan design grafis. Saya Suka tentang teknologi terbaru dan suka belajar hal baru.</p>
+        </section>
+
+        <section class="section">
+            <h2>About Me</h2>
+            <p>Saya memiliki latar belakang dalam desain grafis dan pengembangan perangkat lunak. Dengan keterampilan dalam HTML, CSS, dan JavaScript, saya telah mengerjakan berbagai proyek yang menantang dan membangun aplikasi web yang responsif. Di luar pekerjaan, saya menikmati Bermain game, Memasak, dan Menonton Film.</p>
+        </section>
+
+        <section class="section">
+            <h2>New Project</h2>
+            <p>Berikut beberapa proyek terbaru yang saya kerjakan:</p>
+            <ul>
+                <li><strong>Web design :</strong> Membangun dan mendesain sebuah website untuk di perlombakan di invention udayana.</li>
+                <li><strong>Portofolio Pribadi :</strong> Mendesain dan mengembangkan portofolio pribadi ini untuk menampilkan keterampilan dan proyek saya dengan cara yang interaktif dan menarik.</li>
+            </ul>
+        </section>
+
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Zra. Semua Hak Dilindungi. <a href="#top">Kembali ke atas</a></p>
+    </footer>
+</body>
+</html>

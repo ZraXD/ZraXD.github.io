@@ -1,142 +1,136 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="zra.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f1f6;
-            color: #333;
-        }
-        .logo {
-            font-size: 1.8em;
-            font-weight: bold;
-            color: #fff;
-            text-decoration: none;
-            position: sticky;
-        }
-        header {
-            background: linear-gradient(135deg, #7dda99, #a4ffbb);
-            color: #fff;
-            padding: 2em 0;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-        header::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.3);
-            z-index: -1;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 2em auto;
-        }
-        .profile {
-            text-align: center;
-            margin-bottom: 2em;
-        }
-        .profile img {
-            border-radius: 50%;
-            width: 180px;
-            height: 180px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-        }
-        .profile img:hover {
-            transform: scale(1.1);
-        }
-        .profile h1 {
-            margin: 0.5em 0;
-            font-size: 2.5em;
-            color: #333;
-        }
-        .profile p {
-            font-size: 1.1em;
-            color: #666;
-        }
-        .section {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 2em;
-            margin-bottom: 2em;
-            transition: box-shadow 0.3s;
-        }
-        .section:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .section h2 {
-            margin-top: 0;
-            color: #94e2a8;
-        }
-        .section p {
-            line-height: 1.8;
-            color: #555;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: relative;
-            z-index: 1;
-        }
-        footer a {
-            color: #97f8eb;
-            text-decoration: none;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="logo">
-        <a href="#" class="logo">Zra</a></div>
-        <h1>Selamat datang di Website Portofolio Saya</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zra - Home</title>
+        <link rel="stylesheet" href="./style/style.css" />
+        <link rel="stylesheet" href="./style/responsive.css" />
+    </head>
 
-    <div class="container">
-        <section class="profile">
-            <img src="zra.jpg" alt="Foto Profil">
-            <h1>Izra Rakhi Muhammad</h1>
-            <p>Saya seorang pengembang Frontend dan design grafis. Saya Suka tentang teknologi terbaru dan suka belajar hal baru.</p>
+    <body>
+
+        <!--kepala-->
+        <header>
+            <div class="main-container">
+                <div class="nav">
+                    <div class="logo">
+                        <a href="/">ZR</a>
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#aboutme">About me</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#service">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                        <div class="burger">
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+                        <div class="line-3"></div>
+                    </div>
+                </div>
+                <section id="hero">
+                    <div class="hero-left">
+                        <h3 class="pre-title">My Name Is</h3>
+                        <h1 class="hero-name">Izra <span>Rakhi Muhammad</span></h1>
+                        <p>
+                            Saya seorang pengembang Frontend dan design grafis. Saya Suka tentang teknologi terbaru dan suka belajar hal baru.
+                        </p>
+                    </div>
+                    <div class="hero-right">
+                        <img src="./img/zra.svg" alt="person standing">
+                    </div>
+                </section>
+            </div>
+        </header>
+        <!--tema-->
+
+        <section id="services">
+            <div class="services main-countainer">
+                <h3 class="pre-title">My Services</h3>
+                <a href="#services"></a>
+                <h1 class="selection-title services-title">In</h1>
+
+                <div class="grid-3">
+                        <div class="service">
+                        <div class="service-icon">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M16 3.383l-.924-.383-7.297 17.617.924.383 7.297-17.617zm.287 3.617l6.153 4.825-6.173 5.175.678.737 7.055-5.912-7.048-5.578-.665.753zm-8.478 0l-6.249 4.825 6.003 5.175-.679.737-6.884-5.912 7.144-5.578.665.753z"/>
+                            </svg>
+                        </div>
+                            <h4>Web Builder</h4>
+                            <p>Saya apat menggunakan HTML, CSS, Dan JavaSript untuk membuat Website yang menarik.</p>
+                        </div>
+
+                        <div class="service">
+                            <div class="service-icon">
+                                <svg width="24" height="24" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-3 9.5v4c0 .276-.224.5-.5.5h-4c-.276 0-.5-.224-.5-.5v-4c0-.276.224-.5.5-.5h4c.276 0 .5.224.5.5zm-10.061 1.99-1.218-1.218c-.281-.281-.282-.779 0-1.061s.78-.281 1.061 0l1.218 1.218 1.218-1.218c.281-.281.779-.282 1.061 0s.281.78 0 1.061l-1.218 1.218 1.218 1.218c.281.281.282.779 0 1.061s-.78.281-1.061 0l-1.218-1.218-1.218 1.218c-.281.281-.779.282-1.061 0s-.281-.78 0-1.061zm8.561-.99h-2v2h2zm-7.5-8.5c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3zm9 5.25c0 .399-.353.75-.75.75-1.153 0-2.347 0-3.5 0-.397 0-.75-.351-.75-.75s.353-.75.75-.75h3.5c.397 0 .75.351.75.75zm-9-3.75c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm9 1.5c0 .399-.353.75-.75.75-1.153 0-2.347 0-3.5 0-.397 0-.75-.351-.75-.75s.353-.75.75-.75h3.5c.397 0 .75.351.75.75zm0-2.25c0 .399-.353.75-.75.75-1.153 0-2.347 0-3.5 0-.397 0-.75-.351-.75-.75s.353-.75.75-.75h3.5c.397 0 .75.351.75.75z" fill-rule="nonzero"/></svg>
+                            </div>
+                            <h4>Design Grafis</h4>
+                            <p>Saya dapat membuat Desain Yang Unik dan menarik dengan Berbagai aplikasi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Aboutme">
+            <div class="aboutme main-container">
+                <h3 class="pre-anu">All About Me</h3>
+                <h1 class="section-title"> </h1>
+                <p class="text">Nama saya Izra, Saya Seorang Siswa di SMK Negeri 2 Pekanbaru. dan saya senang Anda mengunjungi situs Portofolio saya. Saya memiliki latar belakang dalam desain grafis dan pengembangan perangkat lunak. Dengan keterampilan dalam HTML, CSS, dan JavaScript.</p>
+            </div>
         </section>
 
-        <section class="section">
-            <h2>About Me</h2>
-            <p>Saya memiliki latar belakang dalam desain grafis dan pengembangan perangkat lunak. Dengan keterampilan dalam HTML, CSS, dan JavaScript, saya telah mengerjakan berbagai proyek yang menantang dan membangun aplikasi web yang responsif. Di luar pekerjaan, saya menikmati Bermain game, Memasak, dan Menonton Film.</p>
+        <section id="skills">
+            <div class="skills main-container">
+                <h3 class="pre-title">Learning Path</h3>
+                <h1 class="section-title">Skill & Education</h1>
+
+                <div class="skills-grid">
+                    <div class="skills-left">
+
+                        <div class="education">
+                            <div class="line">
+
+                            </div>
+                        </div>
+                        <div class="education-info">
+                            <h4 class="education-title">SMK Negeri 2 Pekanbaru</h4>
+                            <p>Frontend, Software Engineering</p>
+                            <h4 class="education-years">2024 - 2026</h4>
+                        </div>
+                    </div>
+                </div>
+                <p >Saya telah mempelajari beberapa bahasa pemrograman seperti :</p>
+                <div class="skills-list">
+                    <ul>
+                        <li>c++</li>
+                        <li>Html</li>
+                        <li>css</li>
+                        <li>JavaScript</li>
+                        <li>python</li>
+                    </ul>
+                    </div>
+                    </div>
+            <div class="skills-right">
+                
         </section>
+                </div>
+            </div>
 
-        <section class="section">
-            <h2>New Project</h2>
-            <p>Berikut beberapa proyek terbaru yang saya kerjakan:</p>
-            <ul>
-                <li><strong>Web design :</strong> Membangun dan mendesain sebuah website untuk di perlombakan di invention udayana.</li>
-                <li><strong>Portofolio Pribadi :</strong> Mendesain dan mengembangkan portofolio pribadi ini untuk menampilkan keterampilan dan proyek saya dengan cara yang interaktif dan menarik.</li>
-            </ul>
-        </section>
 
-        
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Zra. Semua Hak Dilindungi. <a href="#top">Kembali ke atas</a></p>
-    </footer>
-</body>
+            <footer class="footerr">
+                <div class="footer-icons">
+                    <a href="https://www.instagram.com/clone.zra/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a href="https://github.com/ZraXD"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                </div>
+                <p>&#169; 2024 - Made by Zra</p>
+            </footer>
+    </body>
 </html>

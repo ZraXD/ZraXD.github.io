@@ -1,11 +1,49 @@
-@media screen and (max-width:680px){
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .grid-3 {
+        gap: 1rem;
+    }
+    .skill-right ul li {
+        font-size: 0.9rem;
+    }
+}
 
-	#maincontent{
-		width: auto;
-		float: none;
+@media screen and (max-width: 825px) {
+    /* burger */
+    .burger {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    nav {
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #f1f1f1;
+        border-left: 1px solid #f1f1f1;
+        z-index: 9;
+        transform: translateX(100%);
+    }
+	nav ul {
+		height: 100vh;
+		align-item: center;
+		flex-direction: colum;
+		justify-content: center;
 	}
-	#sidebar{
-		width: auto;
-		float: none;
+
+	.nav-active {
+		transform: translateX(0%);
 	}
+
+}
+
+@media screen and (max-width: 640px) {
+
 }
